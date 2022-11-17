@@ -156,19 +156,11 @@ html {
     --lumo-contrast-80pct: var(--lumo-shade-80pct);
     --lumo-contrast-90pct: var(--lumo-shade-90pct);
     --lumo-contrast: var(--lumo-shade);
-
     --lumo-header-text-color: var(--lumo-contrast);
-
-    --lumo-body-text-color: var(--lumo-contrast);
-    --lumo-secondary-text-color: var(--lumo-contrast-70pct);
-    --lumo-tertiary-text-color: var(--lumo-contrast-50pct);
-    --lumo-disabled-text-color: var(--lumo-contrast-30pct);
-
     --lumo-disabled-text-color: var(--mdc-theme-text-disabled-on-background);
-        --lumo-secondary-text-color: var(--mdc-theme-text-hint-on-background);
-        --lumo-tertiary-text-color: var(--mdc-theme-text-secondary-on-background);
-        --lumo-body-text-color: var(--mdc-theme-text-primary-on-background);
-
+    --lumo-secondary-text-color: var(--mdc-theme-text-hint-on-background);
+    --lumo-tertiary-text-color: var(--mdc-theme-text-secondary-on-background);
+    --lumo-body-text-color: var(--mdc-theme-text-primary-on-background);
     --lumo-primary-color: var(--mdc-theme-primary);
     --lumo-primary-color-50pct: rgba(63, 81, 181, 0.5);
     --lumo-primary-color-10pct: rgba(63, 81, 181, 0.1);
