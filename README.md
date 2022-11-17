@@ -1,4 +1,4 @@
-# Project Base for Vaadin Forge Theme
+# Forge DS Vaadin theme
 
 This project is a demo application showcasing themed vaadin components to look and work like forge components
 
@@ -21,5 +21,5 @@ The project follow Maven's [standard directory layout structure](https://maven.a
 - `src/main/resources` contains configuration files and static resources
 - The `frontend` directory in the root folder contains the theme styles
     - `frontend/themes/forge-tech/components` directory contains the specific component styles
-    - `frontend/themes/forge-tech/styles.css` file has all forge components and vaadin lumo variables accessible by all components
+    - `frontend/themes/forge-tech/styles.css` file has all Forge components and Vaadin lumo variables accessible by all components
     - `frontend/themes/forge-tech/views` directory contains the styles for the demo views
