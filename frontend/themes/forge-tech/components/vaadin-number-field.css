@@ -1,0 +1,6 @@
+@import url('common-input-field.css');
+@import url('common-field-label.css');
+
+[part$="button"][disabled] {
+    opacity: 0.3;
+}

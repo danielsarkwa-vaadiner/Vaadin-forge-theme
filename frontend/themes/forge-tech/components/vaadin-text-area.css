@@ -1,0 +1,14 @@
+@import url('common-input-field.css');
+@import url('common-field-label.css');
+
+:host {
+    --lumo-text-field-size: var(--lumo-size-m);
+}
+
+[part="input-field"] {
+    padding: 1.5rem calc(0.42rem + var(--text-offset)) 1rem;
+}
+
+:host(:hover:not([readonly]):not([focused]):not([invalid])) [part="input-field"] {
+    background-color: transparent;
+}

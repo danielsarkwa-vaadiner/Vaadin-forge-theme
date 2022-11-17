@@ -1,0 +1,7 @@
+:host {
+    --inset-padding: var(--lumo-space-s);
+}
+
+:host([placeholder]) [part="label"] {
+    opacity: 0;
+}

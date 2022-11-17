@@ -1,0 +1,70 @@
+:host {
+    --lumo-text-field-size: var(--forge-text-field-height);
+    --text-offset: 4px;
+    --leading-icon-offset: 24px;
+    --inset-padding: 0;
+}
+
+:host [class$='container'] {
+    position: relative;
+}
+
+/* input field styles */
+[part="input-field"] {
+    background-color: var(--lumo-base-color);
+    font-weight: var(--mdc-typography-body1-font-weight);
+    letter-spacing: var(--mdc-typography-body1-letter-spacing);
+    box-shadow: inset 0 0 0 1px var(--lumo-contrast-30pct);
+    border-radius: var(--lumo-border-radius);
+    padding: 0 calc(0.42rem + var(--text-offset));
+    transition: box-shadow .2s 0s cubic-bezier(0, 0, .2, 1);
+}
+
+:host([focused]) [part="input-field"] {
+    box-shadow: inset 0 0 0 1.8px var(--lumo-primary-color);
+}
+
+:host(:hover:not([readonly]):not([focused])) [part="input-field"] {
+    box-shadow: inset 0 0 0 1px var(--mdc-theme-text-primary-on-background);
+}
+
+:host(:hover:not([readonly]):not([focused])) [part='input-field']::after {
+    opacity: 0;
+}
+
+:host([invalid]) [part="input-field"] {
+    background-color: var(--lumo-base-color);
+    box-shadow: inset 0 0 0 2px var(--lumo-error-color);
+}
+
+/* prefix and suffix */
+::slotted(iron-icon), ::slotted(vaadin-icon) {
+    color: var(--lumo-contrast-50pct);
+}
+
+[part="input-field"] ::slotted(:not(iron-icon):not(vaadin-icon):not(input):not(textarea)) {
+    color: var(--lumo-contrast-50pct);
+}
+
+:host(:not([readonly])) [part$="button"]:hover {
+    color: var(--lumo-contrast);
+}
+
+/* helper text styles */
+[part="helper-text"] {
+    color: var(--lumo-contrast-60pct);
+    font-size: var(--lumo-font-size-xs);
+    line-height: var(--lumo-line-height-xs);
+}
+
+:host(:hover:not([readonly]):not([focused])) [part="helper-text"] {
+    color: var(--mdc-theme-text-primary-on-background);
+}
+
+:host([invalid]) [part="helper-text"] {
+    color: var(--lumo-error-color);
+}
+
+:host([has-label]) {
+    --inset-padding: var(--lumo-space-m);
+}

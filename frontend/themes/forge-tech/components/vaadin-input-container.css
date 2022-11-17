@@ -1,0 +1,4 @@
+:host ::slotted(:not([slot$='fix'])) {
+    box-sizing: border-box;
+    padding-top: var(--inset-padding);
+}
