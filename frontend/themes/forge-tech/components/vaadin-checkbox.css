@@ -3,6 +3,10 @@
     font-size: var(--lumo-font-size-s);
 }
 
+:host([has-label]) ::slotted(label) {
+    padding: var(--lumo-space-xs) var(--lumo-space-s) var(--lumo-space-xs) var(--lumo-space-s);
+}
+
 [part="checkbox"] {
     width: 0.8rem;
     height: 0.8rem;
@@ -10,7 +14,6 @@
     background-color: transparent;
     border: 2px solid var(--mdc-theme-text-secondary-on-background);
     top: 0.14rem;
-    /* transition: transform 0.2s cubic-bezier(0.12, 0.32, 0.54, 2), background-color 0.15s; */
 }
 
 :host([indeterminate]) [part="checkbox"], :host([checked]) [part="checkbox"] {
@@ -55,9 +58,5 @@
 :host([checked]:not([disabled]):hover) [part="checkbox"]::before,
 :host([indeterminate]:not([disabled]):hover) [part="checkbox"]::before {
     background-color: var(--forge-theme-tertiary);
-    opacity: 0.10;
-}
-
-:host([has-label]) ::slotted(label) {
-    padding: var(--lumo-space-xs) var(--lumo-space-s) var(--lumo-space-xs) var(--lumo-space-s);
+    opacity: 0.08;
 }
