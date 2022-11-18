@@ -58,6 +58,7 @@ import commonInputFieldCss from 'themes/forge-tech/components/common-input-field
 import textCss from 'themes/forge-tech/components/text.css?inline';
 import vaadinButtonCss from 'themes/forge-tech/components/vaadin-button.css?inline';
 import vaadinCheckboxCss from 'themes/forge-tech/components/vaadin-checkbox.css?inline';
+import vaadinComboBoxOverlayCss from 'themes/forge-tech/components/vaadin-combo-box-overlay.css?inline';
 import vaadinComboBoxCss from 'themes/forge-tech/components/vaadin-combo-box.css?inline';
 import vaadinDatePickerCss from 'themes/forge-tech/components/vaadin-date-picker.css?inline';
 import vaadinDateTimePickerCss from 'themes/forge-tech/components/vaadin-date-time-picker.css?inline';
@@ -133,6 +134,10 @@ export const applyTheme = (target) => {
     registerStyles(
       'vaadin-checkbox',
       unsafeCSS(vaadinCheckboxCss.toString())
+    );
+    registerStyles(
+      'vaadin-combo-box-overlay',
+      unsafeCSS(vaadinComboBoxOverlayCss.toString())
     );
     registerStyles(
       'vaadin-combo-box',
