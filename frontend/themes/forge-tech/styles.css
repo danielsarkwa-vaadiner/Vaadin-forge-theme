@@ -90,6 +90,7 @@ html {
     --forge-typography-title-line-height: 2rem;
     --forge-typography-title-font-weight: 400;
     --forge-typography-title-letter-spacing: 0.0125em;
+    --mdc-typography-button-letter-spacing: 0.0892857143em;
 
     --lumo-border-radius-s: 0.25em;
     --lumo-border-radius-m: var(--lumo-border-radius, 0.25em);

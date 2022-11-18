@@ -1,0 +1,9 @@
+:host {
+    font-size: 0.875rem;
+    /*letter-spacing: var(--mdc-typography-button-letter-spacing);*/
+}
+
+:host([theme~="primary"]) {
+    font-weight: 500;
+    color: var(--mdc-theme-on-primary);
+}
