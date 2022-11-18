@@ -64,6 +64,7 @@ import vaadinEmailFieldCss from 'themes/forge-tech/components/vaadin-email-field
 import vaadinInputContainerCss from 'themes/forge-tech/components/vaadin-input-container.css?inline';
 import vaadinNumberFieldCss from 'themes/forge-tech/components/vaadin-number-field.css?inline';
 import vaadinPasswordFieldCss from 'themes/forge-tech/components/vaadin-password-field.css?inline';
+import vaadinRadioButtonCss from 'themes/forge-tech/components/vaadin-radio-button.css?inline';
 import vaadinSelectValueButtonCss from 'themes/forge-tech/components/vaadin-select-value-button.css?inline';
 import vaadinSelectCss from 'themes/forge-tech/components/vaadin-select.css?inline';
 import vaadinTextAreaCss from 'themes/forge-tech/components/vaadin-text-area.css?inline';
@@ -155,6 +156,10 @@ export const applyTheme = (target) => {
     registerStyles(
       'vaadin-password-field',
       unsafeCSS(vaadinPasswordFieldCss.toString())
+    );
+    registerStyles(
+      'vaadin-radio-button',
+      unsafeCSS(vaadinRadioButtonCss.toString())
     );
     registerStyles(
       'vaadin-select-value-button',

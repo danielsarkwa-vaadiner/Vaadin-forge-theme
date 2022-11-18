@@ -1,5 +1,6 @@
 :host {
     color: var(--mdc-theme-text-primary-on-background);
+    font-size: var(--lumo-font-size-s);
 }
 
 [part="checkbox"] {
@@ -8,6 +9,7 @@
     border-radius: 0.125rem;
     background-color: transparent;
     border: 2px solid var(--mdc-theme-text-secondary-on-background);
+    top: 0.14rem;
     /* transition: transform 0.2s cubic-bezier(0.12, 0.32, 0.54, 2), background-color 0.15s; */
 }
 
@@ -26,17 +28,31 @@
 
 [part="checkbox"]::after {
     top: 0.7em;
-    left: 0.28em;
+    left: 0.318em;
 }
 
 :host([checked]) [part="checkbox"]::after {
-    width: 0.6em;
-    height: 1.28em;
+    height: 1.2em;
 }
 
-:host(:not([checked]):not([indeterminate]):not([disabled]):hover) [part="checkbox"]::before {
-    opacity: 1;
+[part="checkbox"]::before {
+    z-index: -10;
+    transition: opacity 15ms linear,background-color 15ms linear;
+}
+
+:host(:not([disabled]):hover) [part="checkbox"]::before {
     background-color: var(--lumo-shade-5pct);
-    transform: scale(2.7);
+    transform: scale(2.6);
     border-radius: 50%;
+    opacity: 0.6;
+}
+
+:host([checked]:not([disabled]):hover) [part="checkbox"]::before,
+:host([indeterminate]:not([disabled]):hover) [part="checkbox"]::before {
+    background-color: var(--forge-theme-tertiary);
+    opacity: 0.10;
+}
+
+:host([has-label]) ::slotted(label) {
+    padding: var(--lumo-space-xs) var(--lumo-space-s) var(--lumo-space-xs) var(--lumo-space-s);
 }
