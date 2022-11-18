@@ -29,6 +29,11 @@
 [part="checkbox"]::after {
     top: 0.7em;
     left: 0.318em;
+    border-color: var(--mdc-theme-on-primary);
+}
+
+:host([indeterminate]) [part="checkbox"]::after {
+    background-color: var(--mdc-theme-on-primary);
 }
 
 :host([checked]) [part="checkbox"]::after {
