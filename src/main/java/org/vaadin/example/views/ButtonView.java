@@ -19,7 +19,7 @@ import org.vaadin.example.MainView;
 public class ButtonView extends VerticalLayout {
 
     public ButtonView() {
-        styles();
+        basic();
         danger();
         success();
         contrast();
@@ -27,15 +27,15 @@ public class ButtonView extends VerticalLayout {
         icons();
     }
 
-    public Void styles() {
-        H5 groupHeading = new H5("Styles");
+    public Void basic() {
+        H5 groupHeading = new H5("Basic Variants");
 
-        Button primaryButton = new Button("Primary");
+        Button primaryButton = new Button("Button");
         primaryButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 
-        Button secondaryButton = new Button("Secondary");
+        Button secondaryButton = new Button("Button");
 
-        Button tertiaryButton = new Button("Tertiary");
+        Button tertiaryButton = new Button("Button");
         tertiaryButton.addThemeVariants(ButtonVariant.LUMO_TERTIARY);
 
         HorizontalLayout layout = new HorizontalLayout(primaryButton, secondaryButton, tertiaryButton);
@@ -46,13 +46,13 @@ public class ButtonView extends VerticalLayout {
     public Void danger() {
         H5 groupHeading = new H5("Danger / Error Variants");
 
-        Button primaryButton = new Button("Primary");
+        Button primaryButton = new Button("Button");
         primaryButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY, ButtonVariant.LUMO_ERROR);
 
-        Button secondaryButton = new Button("Secondary");
+        Button secondaryButton = new Button("Button");
         secondaryButton.addThemeVariants(ButtonVariant.LUMO_ERROR);
 
-        Button tertiaryButton = new Button("Tertiary");
+        Button tertiaryButton = new Button("Button");
         tertiaryButton.addThemeVariants(ButtonVariant.LUMO_TERTIARY, ButtonVariant.LUMO_ERROR);
 
         HorizontalLayout layout = new HorizontalLayout(primaryButton, secondaryButton, tertiaryButton);
@@ -64,13 +64,13 @@ public class ButtonView extends VerticalLayout {
     public Void success() {
         H5 groupHeading = new H5("Success Variants");
 
-        Button primaryButton = new Button("Primary");
+        Button primaryButton = new Button("Button");
         primaryButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY, ButtonVariant.LUMO_SUCCESS);
 
-        Button secondaryButton = new Button("Secondary");
+        Button secondaryButton = new Button("Button");
         secondaryButton.addThemeVariants(ButtonVariant.LUMO_SUCCESS);
 
-        Button tertiaryButton = new Button("Tertiary");
+        Button tertiaryButton = new Button("Button");
         tertiaryButton.addThemeVariants(ButtonVariant.LUMO_TERTIARY, ButtonVariant.LUMO_SUCCESS);
 
         HorizontalLayout layout = new HorizontalLayout(primaryButton, secondaryButton, tertiaryButton);
@@ -82,13 +82,13 @@ public class ButtonView extends VerticalLayout {
     public Void contrast() {
         H5 groupHeading = new H5("Contrast Variants");
 
-        Button primaryButton = new Button("Primary");
+        Button primaryButton = new Button("Button");
         primaryButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY, ButtonVariant.LUMO_CONTRAST);
 
-        Button secondaryButton = new Button("Secondary");
+        Button secondaryButton = new Button("Button");
         secondaryButton.addThemeVariants(ButtonVariant.LUMO_CONTRAST);
 
-        Button tertiaryButton = new Button("Tertiary (avoid)");
+        Button tertiaryButton = new Button("Button (avoid)");
         tertiaryButton.addThemeVariants(ButtonVariant.LUMO_TERTIARY, ButtonVariant.LUMO_CONTRAST);
 
         HorizontalLayout layout = new HorizontalLayout(primaryButton, secondaryButton, tertiaryButton);
@@ -105,10 +105,11 @@ public class ButtonView extends VerticalLayout {
         plusButton.getElement().setAttribute("aria-label", "Add item");
 
         Button closeButton = new Button(new Icon(VaadinIcon.CLOSE_SMALL));
-        closeButton.addThemeVariants(ButtonVariant.LUMO_ICON);
+        closeButton.addThemeVariants(ButtonVariant.LUMO_ICON, ButtonVariant.LUMO_CONTRAST);
         closeButton.getElement().setAttribute("aria-label", "Close");
 
-        Button arrowLeftButton = new Button("Left", new Icon(VaadinIcon.ARROW_LEFT));
+        Button arrowLeftButton = new Button("Left", new Icon(VaadinIcon.PAPERPLANE));
+        arrowLeftButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 
         Button arrowRightButton = new Button("Right", new Icon(VaadinIcon.ARROW_RIGHT));
         arrowRightButton.setIconAfterText(true);
@@ -120,16 +121,16 @@ public class ButtonView extends VerticalLayout {
     }
 
     public Void disabled() {
-        H5 groupHeading = new H5("Disabled");
+        H5 groupHeading = new H5("Disabled Variants");
 
-        Button primaryButton = new Button("Primary");
+        Button primaryButton = new Button("Button");
         primaryButton.setEnabled(false);
         primaryButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 
-        Button secondaryButton = new Button("Secondary");
+        Button secondaryButton = new Button("Button");
         secondaryButton.setEnabled(false);
 
-        Button tertiaryButton = new Button("Tertiary");
+        Button tertiaryButton = new Button("Button");
         tertiaryButton.setEnabled(false);
         tertiaryButton.addThemeVariants(ButtonVariant.LUMO_TERTIARY);
 

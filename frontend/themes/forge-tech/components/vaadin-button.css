@@ -1,9 +1,46 @@
 :host {
     font-size: 0.875rem;
-    /*letter-spacing: var(--mdc-typography-button-letter-spacing);*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--lumo-primary-color);
+    background-color: var(--_lumo-button-background-color, none);
+    letter-spacing: 0.01em; /* update after typography styling */
 }
 
 :host([theme~="primary"]) {
     font-weight: 500;
     color: var(--mdc-theme-on-primary);
+    min-width: calc(var(--lumo-button-size) * 2);
+    border: none;
+}
+
+:host([theme~="tertiary"]) {
+    border: none;
+    padding: 0 calc(var(--lumo-button-size) / 4.5);
+}
+
+:host([theme~="error"]) {
+    border-color: var(--lumo-error-text-color);
+}
+
+:host([theme~="success"]) {
+    border-color: var(--lumo-success-text-color);
+}
+
+:host([theme~="contrast"]) {
+    border-color: var(--lumo-contrast-text-color);
+}
+
+:host([disabled]) {
+    border-color: var(--mdc-theme-text-disabled-on-background);
+    color: var(--mdc-theme-text-disabled-on-light);
+}
+
+:host([theme~="primary"][disabled]) {
+    background-color: var(--mdc-theme-text-disabled-on-background);
+    color: var(--mdc-theme-text-hint-on-background);
+}
+
+:host([theme~="tertiary"][disabled]) {
+    color: var(--mdc-theme-text-disabled-on-light);
 }

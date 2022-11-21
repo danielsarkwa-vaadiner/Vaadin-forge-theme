@@ -1,5 +1,6 @@
 :host {
     --inset-padding: var(--lumo-space-s);
+    border: none;
 }
 
 :host([placeholder]) [part="label"] {
