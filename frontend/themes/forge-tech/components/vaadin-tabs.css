@@ -1,0 +1,11 @@
+:host(:not([orientation="vertical"])) {
+    box-shadow: inset 0 -1px 0 0 var(--forge-theme-border-color);
+}
+
+:host([orientation="vertical"]) {
+    box-shadow: -1px 0 0 0 var(--forge-theme-border-color);
+}
+
+:host([orientation="horizontal"]) [part="tabs"] {
+    margin: 0 0;
+}

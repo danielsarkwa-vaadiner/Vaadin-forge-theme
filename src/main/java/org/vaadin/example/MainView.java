@@ -48,8 +48,9 @@ public class MainView extends AppLayout {
             createTab("Time Picker", TimePickerView.class),
             createTab("Date Time Picker", DateTimePickerView.class),
             createTab("Tabs", TabsView.class),
-            createTab("Checkout Demo",  CheckoutView.class),
-            createTab("Components",  ComponentsView.class)
+            createTab("Dialog", DialogView.class),
+            createTab("Checkout Demo", CheckoutView.class),
+            createTab("Components", ComponentsView.class)
         );
         tabs.setOrientation(Tabs.Orientation.VERTICAL);
         return tabs;

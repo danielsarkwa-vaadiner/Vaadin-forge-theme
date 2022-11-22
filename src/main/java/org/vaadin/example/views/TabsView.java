@@ -29,9 +29,9 @@ public class TabsView extends VerticalLayout {
     public Void basic() {
         H5 groupHeading = new H5("Basic");
 
-        Tab details = new Tab("Details");
-        Tab payment = new Tab("Payment");
-        Tab shipping = new Tab("Shipping");
+        Tab details = new Tab("Tab one");
+        Tab payment = new Tab("Tab two");
+        Tab shipping = new Tab("Tab three");
 
         Tabs tabs = new Tabs(details, payment, shipping);
 
@@ -98,16 +98,16 @@ public class TabsView extends VerticalLayout {
         H5 groupHeading = new H5("Icons - Vertical");
 
         Tab profile = new Tab(
-                VaadinIcon.USER.create(),
-                new Span("Profile")
+                VaadinIcon.HEART.create(),
+                new Span("Tab one")
         );
         Tab settings = new Tab(
-                VaadinIcon.COG.create(),
-                new Span("Settings")
+                VaadinIcon.HEART.create(),
+                new Span("Tab two")
         );
         Tab notifications = new Tab(
-                VaadinIcon.BELL.create(),
-                new Span("Notifications")
+                VaadinIcon.HEART.create(),
+                new Span("Tab three")
         );
 
         // Set the icon on top
@@ -126,16 +126,16 @@ public class TabsView extends VerticalLayout {
         H5 groupHeading = new H5("Icons - Horizontal");
 
         Tab profile = new Tab(
-                VaadinIcon.USER.create(),
-                new Span("Profile")
+                VaadinIcon.HEART.create(),
+                new Span("Tab one")
         );
         Tab settings = new Tab(
-                VaadinIcon.COG.create(),
-                new Span("Settings")
+                VaadinIcon.HEART.create(),
+                new Span("Tab two")
         );
         Tab notifications = new Tab(
-                VaadinIcon.BELL.create(),
-                new Span("Notifications")
+                VaadinIcon.HEART.create(),
+                new Span("Tab three")
         );
 
         Tabs tabs = new Tabs(profile, settings, notifications);

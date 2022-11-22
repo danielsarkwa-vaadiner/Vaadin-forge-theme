@@ -1,0 +1,69 @@
+:host {
+    color: var(--mdc-theme-text-secondary-on-light);
+    padding: var(--lumo-space-m) var(--lumo-space-l);
+    transition: opacity 15ms linear,background-color 15ms linear;
+    font-size: 0.938rem;
+    letter-spacing: 0.025em;
+}
+
+:host([orientation="vertical"]) {
+    padding: 0.25rem 0.875rem;
+}
+
+:host([orientation="vertical"]) {
+    transform-origin: 0% 50%;
+    padding: 0.25rem 1rem;
+    min-height: var(--lumo-size-m);
+    min-width: 0;
+    padding: var(--lumo-space-m);
+}
+
+:host(:hover) {
+    background-color: var(--mdc-theme-primary-4pct);
+    color: var(--mdc-theme-text-secondary-on-light);
+}
+
+:host::after {
+    display: none;
+}
+
+:host::before, :host::after {
+    width: 100%;
+    border-radius: 0px;
+    transform: translateX(-100%) scale(0);
+    transform-origin: 0% 100%;
+    transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:host([selected])::before, :host([selected])::after {
+    transform: translateX(-50%) scale(1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:host([orientation="vertical"])::before,
+:host([orientation="vertical"])::after {
+    height: 100%;
+    transform: translateY(-50%) scale(0);
+    border-radius: 0;
+    transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:host([orientation="vertical"][selected])::before,
+:host([orientation="vertical"][selected])::after {
+    transform: translateY(50%) scale(1);
+}
+
+:host ::slotted(vaadin-icon[icon^="vaadin:"]),
+:host ::slotted(iron-icon[icon^="vaadin:"]) {
+    padding: 0;
+}
+
+:host([theme~="icon-on-top"]) ::slotted(vaadin-icon),
+:host([theme~="icon-on-top"]) ::slotted(iron-icon) {
+    margin: var(--lumo-space-xs) 0 var(--lumo-space-s) 0;
+}
+
+:host([orientation="vertical"]) ::slotted(vaadin-icon),
+:host([orientation="vertical"]) ::slotted(iron-icon) {
+    margin-right: 8px;
+}
