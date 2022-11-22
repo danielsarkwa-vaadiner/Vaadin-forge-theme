@@ -62,6 +62,7 @@ import vaadinComboBoxOverlayCss from 'themes/forge-tech/components/vaadin-combo-
 import vaadinComboBoxCss from 'themes/forge-tech/components/vaadin-combo-box.css?inline';
 import vaadinDatePickerCss from 'themes/forge-tech/components/vaadin-date-picker.css?inline';
 import vaadinDateTimePickerCss from 'themes/forge-tech/components/vaadin-date-time-picker.css?inline';
+import vaadinDialogOverlayCss from 'themes/forge-tech/components/vaadin-dialog-overlay.css?inline';
 import vaadinEmailFieldCss from 'themes/forge-tech/components/vaadin-email-field.css?inline';
 import vaadinInputContainerCss from 'themes/forge-tech/components/vaadin-input-container.css?inline';
 import vaadinNumberFieldCss from 'themes/forge-tech/components/vaadin-number-field.css?inline';
@@ -152,6 +153,10 @@ export const applyTheme = (target) => {
     registerStyles(
       'vaadin-date-time-picker',
       unsafeCSS(vaadinDateTimePickerCss.toString())
+    );
+    registerStyles(
+      'vaadin-dialog-overlay',
+      unsafeCSS(vaadinDialogOverlayCss.toString())
     );
     registerStyles(
       'vaadin-email-field',

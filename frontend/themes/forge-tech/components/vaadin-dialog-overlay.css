@@ -1,0 +1,7 @@
+[part="overlay"] {
+    border-radius: var(--lumo-border-radius);
+}
+
+[part="content"] {
+    padding: var(--lumo-space-s);
+}

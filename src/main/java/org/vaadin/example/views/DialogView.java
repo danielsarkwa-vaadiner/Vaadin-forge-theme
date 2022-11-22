@@ -31,8 +31,13 @@ public class DialogView extends VerticalLayout {
 
     private static VerticalLayout createDialogLayout(Dialog dialog) {
         H4 title = new H4("Discard draft?");
+        title.getStyle().set("margin", "12px 16px 10px");
+        title.getStyle().set("font-weight", "400");
+
         Paragraph message = new Paragraph("Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
                 "Morbi aliquam, neque non varius egestas, nisi urna venenatis lacus, sit amet malesuada mauris urna et ex.");
+        message.getStyle().set("padding", "0px 16px 12px");
+        message.getStyle().set("margin-top", "4px");
 
         Footer footer = createFooter(dialog);
 
