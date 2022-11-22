@@ -1,0 +1,54 @@
+:host {
+    border-bottom: solid 1px var(--forge-theme-border-color);
+}
+
+[part="summary"] {
+    color: var(--mdc-theme-text-primary-on-background);
+    font-weight: 400;
+    padding: 0.125rem 0;
+}
+
+:host(:not([disabled])) [part="summary"]:hover {
+    color: var(--mdc-theme-text-primary-on-background);
+}
+
+[part="toggle"] {
+    color: var(--forge-theme-icon-color);
+    transform: rotate(90deg);
+    transition: transform 450ms;
+}
+
+:host(:not([disabled])) [part="summary"]:hover [part="toggle"] {
+    color: var(--forge-theme-icon-color);
+}
+
+:host([opened]) [part="toggle"] {
+    transform: rotate(270deg);
+}
+
+[part="content"] {
+    padding: 0 0 var(--lumo-space-xs);
+}
+
+:host([disabled]) [part="summary"],
+:host([disabled]) [part="toggle"] {
+    color: var(--lumo-contrast-20pct);
+}
+
+:host([theme~="filled"]) {
+    background-color: var(--lumo-contrast-10pct);
+    border-radius: 0.125rem;
+}
+
+:host([theme~="filled"]) [part="summary"] {
+    padding: 0.125rem var(--lumo-space-s);
+}
+
+:host([theme~="filled"]) [part="content"] {
+    padding-left: var(--lumo-space-s);
+    padding-right: var(--lumo-space-s);
+}
+
+:host([theme~="filled"]:not(:last-child)) {
+    margin-bottom: 1px;
+}

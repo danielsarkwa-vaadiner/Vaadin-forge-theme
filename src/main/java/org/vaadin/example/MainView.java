@@ -34,6 +34,7 @@ public class MainView extends AppLayout {
     private Tabs getTabs() {
         Tabs tabs = new Tabs();
         tabs.add(
+            createTab("Accordion", AccordionView.class),
             createTab("Button", ButtonView.class),
             createTab("Checkbox", CheckboxView.class),
             createTab("Radio", RadioButtonView.class),

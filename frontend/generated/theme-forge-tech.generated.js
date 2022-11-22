@@ -56,6 +56,7 @@ import { utility } from '@vaadin/vaadin-lumo-styles/utility.js';
 import commonFieldLabelCss from 'themes/forge-tech/components/common-field-label.css?inline';
 import commonInputFieldCss from 'themes/forge-tech/components/common-input-field.css?inline';
 import textCss from 'themes/forge-tech/components/text.css?inline';
+import vaadinAccordionPanelCss from 'themes/forge-tech/components/vaadin-accordion-panel.css?inline';
 import vaadinButtonCss from 'themes/forge-tech/components/vaadin-button.css?inline';
 import vaadinCheckboxCss from 'themes/forge-tech/components/vaadin-checkbox.css?inline';
 import vaadinComboBoxOverlayCss from 'themes/forge-tech/components/vaadin-combo-box-overlay.css?inline';
@@ -129,6 +130,10 @@ export const applyTheme = (target) => {
     registerStyles(
       'text',
       unsafeCSS(textCss.toString())
+    );
+    registerStyles(
+      'vaadin-accordion-panel',
+      unsafeCSS(vaadinAccordionPanelCss.toString())
     );
     registerStyles(
       'vaadin-button',
