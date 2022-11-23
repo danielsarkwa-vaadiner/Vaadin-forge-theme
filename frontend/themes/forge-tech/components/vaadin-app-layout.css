@@ -1,0 +1,7 @@
+[part="drawer"] {
+    background-color: var(--mdc-theme-background);
+}
+
+[part="navbar"]::before {
+    opacity: 1;
+}
