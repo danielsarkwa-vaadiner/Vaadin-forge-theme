@@ -53,6 +53,7 @@ public class MainView extends AppLayout {
             createTab("Text Field", TextFieldView.class),
             createTab("Text Area", TextAreaView.class),
             createTab("Time Picker", TimePickerView.class),
+            createTab("Tree Grid", TreeGridView.class),
             createTab("Checkout Demo", CheckoutView.class),
             createTab("Components", ComponentsView.class)
         );
