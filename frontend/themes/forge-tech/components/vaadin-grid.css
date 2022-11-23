@@ -1,0 +1,25 @@
+:host {
+    --cell-height: calc(var(--lumo-size-l) + 0.125rem);
+    color: var(--mdc-theme-on-surface);
+    font-size: 14px;
+}
+
+[part~="header-cell"] ::slotted(vaadin-grid-cell-content),
+[part~="footer-cell"] ::slotted(vaadin-grid-cell-content),
+[part~="reorder-ghost"] {
+    font-size: var(--mdc-typography-caption-font-size);
+    font-weight: 700;
+    color: var(--mdc-theme-text-secondary-on-background);
+}
+
+[part~="cell"] {
+    min-height: var(--cell-height);
+}
+
+:host(:not([theme~="no-row-borders"])) [part="row"][first] [part~="cell"]:not([part~="details-cell"]) {
+    min-height: calc(var(--cell-height) - var(--_lumo-grid-border-width));
+}
+
+:host(:not([reordering])) [part~="row"][selected] [part~="body-cell"]:not([part~="details-cell"]) {
+    background-color: var(--forge-table-theme-row-selected-background);
+}

@@ -1,0 +1,10 @@
+[part~="editable-cell"]:hover,
+[part~="editable-cell"]:focus {
+    background: var(--lumo-base-color) linear-gradient(var(--lumo-shade-5pct), var(--lumo-shade-5pct));
+}
+
+:host([navigating]) [part~="cell"]:active::before,
+:host([navigating]) [part~="row"]:focus::before,
+:host([navigating]) [part~="cell"]:focus::before {
+    box-shadow: inset 0 0 0 2px var(--forge-theme-tertiary);
+}

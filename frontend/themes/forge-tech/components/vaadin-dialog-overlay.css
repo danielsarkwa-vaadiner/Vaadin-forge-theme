@@ -5,3 +5,7 @@
 [part="content"] {
     padding: var(--lumo-space-s);
 }
+
+:host([theme~="_vaadin-confirm-dialog-dialog-overlay-theme"]) [part="content"] {
+    padding: var(--lumo-space-l);
+}
