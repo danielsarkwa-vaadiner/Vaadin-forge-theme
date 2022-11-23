@@ -37,6 +37,7 @@ public class MainView extends AppLayout {
             createTab("Accordion", AccordionView.class),
             createTab("Button", ButtonView.class),
             createTab("Checkbox", CheckboxView.class),
+            createTab("Details", DetailsView.class),
             createTab("Radio", RadioButtonView.class),
             createTab("Text Field", TextFieldView.class),
             createTab("Email Field", EmailFieldView.class),
