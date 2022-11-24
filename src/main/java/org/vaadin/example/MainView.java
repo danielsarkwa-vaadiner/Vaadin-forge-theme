@@ -35,7 +35,9 @@ public class MainView extends AppLayout {
         Tabs tabs = new Tabs();
         tabs.add(
             createTab("Accordion", AccordionView.class),
+            createTab("Badge", BadgeView.class),
             createTab("Button", ButtonView.class),
+            createTab("CRUD", CrudView.class),
             createTab("Checkbox", CheckboxView.class),
             createTab("Combo Box", ComboBoxView.class),
             createTab("Confirm Dialog", ConfirmDialogView.class),

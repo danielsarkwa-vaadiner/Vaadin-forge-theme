@@ -1,3 +1,5 @@
+@import url('./components/badge.css');
+
 html {
     --mdc-theme-primary: #3f51b5;
     --mdc-theme-primary-4pct: rgba(63, 81, 181, 0.045); /* custom variable for primary color with 4% opacity */
@@ -92,6 +94,33 @@ html {
     --forge-typography-title-font-weight: 400;
     --forge-typography-title-letter-spacing: 0.0125em;
     --mdc-typography-button-letter-spacing: 0.0892857143em;
+
+    --forge-badge-theme-default-muted-background: #ffc107;
+    --forge-badge-theme-default-strong-background: #3f51b5;
+    --forge-badge-theme-default-muted-color: #000000;
+    --forge-badge-theme-default-strong-color: rgba(255, 255, 255, 0.87);
+    --forge-badge-theme-success-muted-background: #175a2a;
+    --forge-badge-theme-success-strong-background: #007425;
+    --forge-badge-theme-success-muted-color: #ffffff;
+    --forge-badge-theme-success-strong-color: #ffffff;
+    --forge-badge-theme-warning-muted-background: #933600;
+    --forge-badge-theme-warning-strong-background: #cc3900;
+    --forge-badge-theme-warning-muted-color: #ffffff;
+    --forge-badge-theme-warning-strong-color: #ffffff;
+    --forge-badge-theme-danger-muted-background: #810022;
+    --forge-badge-theme-danger-strong-background: #ae0019;
+    --forge-badge-theme-danger-muted-color: #ffffff;
+    --forge-badge-theme-danger-strong-color: #ffffff;
+
+    --forge-badge-theme-info-primary-muted-background: #bbdefb;
+    --forge-badge-theme-info-primary-muted-color: #1a237e;
+
+    --forge-badge-theme-info-primary-strong-background: #1a237e;
+    --forge-badge-theme-info-primary-strong-color: #ffffff;
+    --forge-badge-theme-info-secondary-muted-background: #424242;
+    --forge-badge-theme-info-secondary-strong-background: #5a5a5a;
+    --forge-badge-theme-info-secondary-muted-color: #ffffff;
+    --forge-badge-theme-info-secondary-strong-color: #ffffff;
 
     --lumo-border-radius-s: 0.25em;
     --lumo-border-radius-m: var(--lumo-border-radius, 0.25em);
@@ -324,7 +353,7 @@ html[theme="dark"] {
     --lumo-success-color-10pct: rgba(23, 90, 42, 0.1);
     --lumo-success-color: #175a2a;
     --lumo-base-color: var(--mdc-theme-surface);
-    --lumo-shade-5pct: rgba(0, 0, 0, 0.05);
+    --lumo-shade-5pct: rgba(0, 0, 0, 0.07);
     --lumo-shade-10pct: rgba(0, 0, 0, 0.1);
     --lumo-shade-20pct: rgba(0, 0, 0, 0.2);
     --lumo-shade-30pct: rgba(0, 0, 0, 0.38);

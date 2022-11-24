@@ -1,0 +1,13 @@
+[theme~="badge"] {
+    --lumo-border-radius-s: 1em;
+    padding: 0.438em calc(0.5em + var(--lumo-border-radius-s) / 4);
+    color: var(--forge-badge-theme-info-primary-muted-color);
+    background-color: var(--forge-badge-theme-info-primary-muted-background);
+    font-size: var(--mdc-typography-caption-font-size);
+    font-weight: 700;
+}
+
+[theme~="badge"][theme~="success"] {
+    color: var(--forge-badge-theme-success-muted-color);
+    background-color: var(--forge-badge-theme-success-muted-background, #a5d6a7);
+}

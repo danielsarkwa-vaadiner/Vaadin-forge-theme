@@ -39,6 +39,7 @@ public class ConfirmDialogView extends VerticalLayout {
         dialog.addConfirmListener(event -> setStatus("Saved"));
 
         Button button = new Button("Open confirm dialog");
+        button.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         button.addClickListener(event -> {
             dialog.open();
             status.setVisible(false);
