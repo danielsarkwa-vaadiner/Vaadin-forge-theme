@@ -1,0 +1,19 @@
+:host ::slotted(vaadin-item) {
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 0;
+    padding: var(--lumo-space-m) var(--lumo-space-xl) var(--lumo-space-m) var(--lumo-border-radius);
+}
+
+:host ::slotted(vaadin-item:hover:not([disabled])) {
+    background-color: var(--lumo-shade-5pct);
+}
+
+:host([theme~="minimal"]) ::slotted(vaadin-item) {
+    --_lumo-item-selected-icon-display: none;
+    padding: var(--lumo-space-m);
+}
+
+:host([disabled]) {
+    color: var(--lumo-contrast-20pct);
+}

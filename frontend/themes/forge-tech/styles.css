@@ -94,32 +94,29 @@ html {
     --forge-typography-title-font-weight: 400;
     --forge-typography-title-letter-spacing: 0.0125em;
     --mdc-typography-button-letter-spacing: 0.0892857143em;
-
     --forge-badge-theme-default-muted-background: #ffc107;
     --forge-badge-theme-default-strong-background: #3f51b5;
     --forge-badge-theme-default-muted-color: #000000;
     --forge-badge-theme-default-strong-color: rgba(255, 255, 255, 0.87);
-    --forge-badge-theme-success-muted-background: #175a2a;
-    --forge-badge-theme-success-strong-background: #007425;
-    --forge-badge-theme-success-muted-color: #ffffff;
+    --forge-badge-theme-success-muted-background: #A5D6A7;
+    --forge-badge-theme-success-strong-background: #2e7d32;
+    --forge-badge-theme-success-muted-color: #1b5e20;
     --forge-badge-theme-success-strong-color: #ffffff;
     --forge-badge-theme-warning-muted-background: #933600;
     --forge-badge-theme-warning-strong-background: #cc3900;
     --forge-badge-theme-warning-muted-color: #ffffff;
     --forge-badge-theme-warning-strong-color: #ffffff;
-    --forge-badge-theme-danger-muted-background: #810022;
-    --forge-badge-theme-danger-strong-background: #ae0019;
-    --forge-badge-theme-danger-muted-color: #ffffff;
+    --forge-badge-theme-danger-muted-background: #ffcdd2;
+    --forge-badge-theme-danger-strong-background: #b00020;
+    --forge-badge-theme-danger-muted-color: #a22d0e;
     --forge-badge-theme-danger-strong-color: #ffffff;
-
     --forge-badge-theme-info-primary-muted-background: #bbdefb;
     --forge-badge-theme-info-primary-muted-color: #1a237e;
-
     --forge-badge-theme-info-primary-strong-background: #1a237e;
     --forge-badge-theme-info-primary-strong-color: #ffffff;
-    --forge-badge-theme-info-secondary-muted-background: #424242;
-    --forge-badge-theme-info-secondary-strong-background: #5a5a5a;
-    --forge-badge-theme-info-secondary-muted-color: #ffffff;
+    --forge-badge-theme-info-secondary-muted-background: #e0e0e0;
+    --forge-badge-theme-info-secondary-strong-background: #000000;
+    --forge-badge-theme-info-secondary-muted-color: #000000;
     --forge-badge-theme-info-secondary-strong-color: #ffffff;
 
     --lumo-border-radius-s: 0.25em;
@@ -380,4 +377,8 @@ html[theme="dark"] {
     --lumo-tint-80pct: rgba(217, 228, 242, 0.8);
     --lumo-tint-90pct: rgba(217, 228, 242, 0.9);
     --lumo-tint: hsl(214, 50%, 90%);
+}
+
+hr {
+    margin: var(--lumo-space-s) 0px;
 }

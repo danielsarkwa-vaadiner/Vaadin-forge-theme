@@ -7,7 +7,6 @@ import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
@@ -104,17 +103,13 @@ public class ButtonView extends VerticalLayout {
         plusButton.addThemeVariants(ButtonVariant.LUMO_ICON);
         plusButton.getElement().setAttribute("aria-label", "Add item");
 
-        Button closeButton = new Button(new Icon(VaadinIcon.CLOSE_SMALL));
-        closeButton.addThemeVariants(ButtonVariant.LUMO_ICON, ButtonVariant.LUMO_CONTRAST);
-        closeButton.getElement().setAttribute("aria-label", "Close");
-
         Button arrowLeftButton = new Button("Left", new Icon(VaadinIcon.PAPERPLANE));
         arrowLeftButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 
         Button arrowRightButton = new Button("Right", new Icon(VaadinIcon.ARROW_RIGHT));
         arrowRightButton.setIconAfterText(true);
 
-        HorizontalLayout layout = new HorizontalLayout(plusButton, closeButton, arrowLeftButton, arrowRightButton);
+        HorizontalLayout layout = new HorizontalLayout(plusButton, arrowLeftButton, arrowRightButton);
         add(groupHeading, layout);
 
         return null;

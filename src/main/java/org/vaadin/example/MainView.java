@@ -41,12 +41,15 @@ public class MainView extends AppLayout {
             createTab("Checkbox", CheckboxView.class),
             createTab("Combo Box", ComboBoxView.class),
             createTab("Confirm Dialog", ConfirmDialogView.class),
+            createTab("Context Menu", ContextMenuView.class),
             createTab("Date Picker", DatePickerView.class),
             createTab("Date Time Picker", DateTimePickerView.class),
             createTab("Dialog", DialogView.class),
             createTab("Details", DetailsView.class),
             createTab("Email Field", EmailFieldView.class),
             createTab("Grid", GridView.class),
+            createTab("List Box", ListBoxView.class),
+            createTab("Menu Bar", MenuBarView.class),
             createTab("Radio", RadioButtonView.class),
             createTab("Number Field", NumberFieldView.class),
             createTab("Password Field", PasswordFieldView.class),
@@ -56,6 +59,7 @@ public class MainView extends AppLayout {
             createTab("Text Area", TextAreaView.class),
             createTab("Time Picker", TimePickerView.class),
             createTab("Tree Grid", TreeGridView.class),
+            createTab("Upload", UploadView.class),
             createTab("Checkout Demo", CheckoutView.class),
             createTab("Components", ComponentsView.class)
         );

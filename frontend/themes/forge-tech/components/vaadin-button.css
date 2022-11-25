@@ -4,7 +4,7 @@
     border-style: solid;
     border-color: var(--lumo-primary-color);
     background-color: var(--_lumo-button-background-color, none);
-    letter-spacing: 0.01em; /* update after typography styling */
+    /* letter-spacing: 0.01em; update after typography styling */
 }
 
 :host([theme~="primary"]) {

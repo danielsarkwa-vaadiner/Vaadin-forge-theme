@@ -7,7 +7,37 @@
     font-weight: 700;
 }
 
+[theme~="badge"][theme~="primary"] {
+    color: var(--forge-badge-theme-info-primary-strong-color);
+    background-color: var(--forge-badge-theme-info-primary-strong-background);
+}
+
 [theme~="badge"][theme~="success"] {
     color: var(--forge-badge-theme-success-muted-color);
-    background-color: var(--forge-badge-theme-success-muted-background, #a5d6a7);
+    background-color: var(--forge-badge-theme-success-muted-background);
+}
+
+[theme~="badge"][theme~="success"][theme~="primary"] {
+    color: var(--forge-badge-theme-success-strong-color);
+    background-color: var(--forge-badge-theme-success-strong-background);
+}
+
+[theme~="badge"][theme~="error"] {
+   color: var(--forge-badge-theme-danger-muted-color);
+   background-color: var(--forge-badge-theme-danger-muted-background);
+}
+
+[theme~="badge"][theme~="error"][theme~="primary"] {
+    color: var(--forge-badge-theme-danger-strong-color);
+    background-color: var(--forge-badge-theme-danger-strong-background);
+}
+
+[theme~="badge"][theme~="contrast"] {
+   color: var(--forge-badge-theme-info-secondary-muted-color);
+   background-color: var(--forge-badge-theme-info-secondary-muted-background);
+}
+
+[theme~="badge"][theme~="contrast"][theme~="primary"] {
+    color: var(--forge-badge-theme-info-secondary-strong-color);
+    background-color: var(--forge-badge-theme-info-secondary-strong-background);
 }
