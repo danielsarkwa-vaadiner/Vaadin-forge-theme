@@ -1,0 +1,23 @@
+:host {
+    --_lumo-button-background-color: transparent;
+    margin: calc(var(--lumo-space-xs) / 2) 0;
+    border-left: 0px;
+    font-size: 0.875rem;
+}
+
+:host(:first-of-type) {
+    border: 1px solid var(--lumo-primary-color);
+}
+
+:host([disabled]) {
+    border-right: 1px solid var(--lumo-primary-color);
+}
+
+:host([disabled]:first-of-type) {
+    border: 1px solid var(--lumo-disabled-text-color);
+    border-right: 1px solid var(--lumo-primary-color);
+}
+
+:host([disabled]:nth-last-of-type(2)) {
+    border-right: 1px solid var(--lumo-disabled-text-color);
+}

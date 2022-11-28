@@ -1,0 +1,13 @@
+:host {
+    color: var(--lumo-body-text-color);
+}
+
+[part="overlay"] {
+    background-color: #303030;
+    border-radius: var(--lumo-border-radius);
+    /*box-shadow: var(--material-shadow-elevation-6dp);*/
+}
+
+[part="content"] {
+    font-weight: 400;
+}

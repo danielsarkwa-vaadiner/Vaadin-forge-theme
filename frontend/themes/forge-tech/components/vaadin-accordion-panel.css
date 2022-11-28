@@ -32,7 +32,7 @@
 
 :host([disabled]) [part="summary"],
 :host([disabled]) [part="toggle"] {
-    color: var(--lumo-contrast-20pct);
+    color: var(--lumo-disabled-text-color);
 }
 
 :host([theme~="filled"]) {

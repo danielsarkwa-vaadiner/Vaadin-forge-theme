@@ -32,8 +32,8 @@
 }
 
 :host([disabled]) {
-    border-color: var(--mdc-theme-text-disabled-on-background);
-    color: var(--mdc-theme-text-disabled-on-light);
+    border-color: var(--lumo-disabled-text-color);
+    color: var(--lumo-disabled-text-color);
 }
 
 :host([theme~="primary"][disabled]) {

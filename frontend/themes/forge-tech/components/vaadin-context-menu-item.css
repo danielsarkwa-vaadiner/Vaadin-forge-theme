@@ -1,3 +1,7 @@
 :host(:not([dir="rtl"]).vaadin-menu-item.vaadin-context-menu-parent-item)::after {
     margin-right: calc(var(--lumo-space-xl) * -0.7);
 }
+
+:host([theme="menu-bar-item"]) [part="content"] {
+    font-size: 0.875rem;
+}

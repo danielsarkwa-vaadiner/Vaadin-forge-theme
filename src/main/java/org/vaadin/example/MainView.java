@@ -50,6 +50,7 @@ public class MainView extends AppLayout {
             createTab("Grid", GridView.class),
             createTab("List Box", ListBoxView.class),
             createTab("Menu Bar", MenuBarView.class),
+            createTab("Notification", NotificationView.class),
             createTab("Radio", RadioButtonView.class),
             createTab("Number Field", NumberFieldView.class),
             createTab("Password Field", PasswordFieldView.class),

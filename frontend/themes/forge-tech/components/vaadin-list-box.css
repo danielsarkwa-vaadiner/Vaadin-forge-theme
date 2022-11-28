@@ -15,5 +15,5 @@
 }
 
 :host([disabled]) {
-    color: var(--lumo-contrast-20pct);
+    color: var(--lumo-disabled-text-color);
 }

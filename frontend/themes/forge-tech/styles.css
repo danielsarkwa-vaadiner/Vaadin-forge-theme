@@ -14,7 +14,7 @@ html {
     --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
     --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
     --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
-    --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.12);
+    --mdc-theme-text-disabled-on-background: var(--lumo-contrast-20pct);
     --mdc-theme-text-icon-on-background: var(--mdc-theme-text-hint-on-background);
     --mdc-theme-text-primary-on-light: var(--mdc-theme-text-primary-on-background);
     --mdc-theme-text-secondary-on-light: var(--mdc-theme-text-secondary-on-background);
@@ -75,7 +75,6 @@ html {
     --mdc-typography-subtitle2-font-size: 0.875rem;
     --mdc-typography-subtitle2-letter-spacing: 0.0087500001em;
     --mdc-typography-subtitle2-line-height: 1.375rem;
-    --mdc-typography-subtitle2-letter-spacing: 0.0071428571em;
     --mdc-typography-body1-font-size: 1rem;
     --mdc-typography-body1-line-height: 1.5rem;
     --mdc-typography-body1-font-weight: 400;

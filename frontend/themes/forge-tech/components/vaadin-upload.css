@@ -1,0 +1,9 @@
+[part="drop-label"] {
+    font-size: 0.875rem;
+    color: var(--lumo-contrast-60pct);
+    padding: 0 var(--lumo-space-m);
+}
+
+[part="upload-button"] {
+    text-transform: uppercase;
+}
