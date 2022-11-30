@@ -1,8 +1,8 @@
-/*:host {
+:host {
     --_vaadin-combo-box-items-container-border-width: 0px;
     --_vaadin-combo-box-items-container-border-style: solid;
     --_vaadin-combo-box-items-container-border-color: transparent;
-}*/
+}
 
 :host([top-aligned]) [part~="overlay"] {
     margin-top: 0;

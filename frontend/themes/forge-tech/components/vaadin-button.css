@@ -14,7 +14,8 @@
     border: none;
 }
 
-:host([theme~="tertiary"]) {
+:host([theme~="tertiary"]),
+:host([theme~="tertiary-inline"]) {
     border: none;
     padding: 0 calc(var(--lumo-button-size) / 4.5);
 }

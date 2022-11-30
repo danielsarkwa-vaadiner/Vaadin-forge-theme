@@ -18,9 +18,10 @@ public class TextFieldView extends VerticalLayout {
 
         labeling();
         prefixSuffix();
+        readonly();
+        diabled();
         clearable();
         helperText();
-
     }
 
     public Void labeling() {
@@ -138,6 +139,32 @@ public class TextFieldView extends VerticalLayout {
         basic.setLabel("Label");
 
         add(groupHeading, basic);
+
+        return null;
+    }
+
+    public Void readonly() {
+        H5 groupHeading = new H5("Read-only");
+
+        TextField readOnly = new TextField();
+        readOnly.setReadOnly(true);
+        readOnly.setLabel("Read-only");
+        readOnly.setValue("Value");
+
+        add(groupHeading, readOnly);
+
+        return null;
+    }
+
+    public Void diabled() {
+        H5 groupHeading = new H5("Disabled");
+
+        TextField textField = new TextField();
+        textField.setEnabled(false);
+        textField.setLabel("Disabled");
+        textField.setValue("value");
+
+        add(groupHeading, textField);
 
         return null;
     }

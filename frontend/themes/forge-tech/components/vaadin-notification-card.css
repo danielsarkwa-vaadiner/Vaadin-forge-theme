@@ -1,13 +1,21 @@
-:host {
-    color: var(--lumo-body-text-color);
-}
-
 [part="overlay"] {
-    background-color: #303030;
-    border-radius: var(--lumo-border-radius);
+    background-color: var(--mdc-theme-notification-background);
+    border-radius: 0.25em;
     /*box-shadow: var(--material-shadow-elevation-6dp);*/
+    font-size: var(--lumo-font-size-s);
 }
 
 [part="content"] {
-    font-weight: 400;
+    color: var(--mdc-theme-text-notification);
+    padding: var(--lumo-space-s) var(--lumo-space-m);
+}
+
+:host([theme~="with-trailing"]) [part="content"] {
+    padding: var(--lumo-space-s);
+    padding-left: var(--lumo-space-m);
+}
+
+:host([theme~="success"]),
+:host([theme~="error"]) {
+    color: var(--lumo-tint);
 }

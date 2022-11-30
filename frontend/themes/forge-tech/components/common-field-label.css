@@ -35,6 +35,10 @@
     top: var(--lumo-space-s);
 }
 
+:host([readonly]:not([focused])) [part="label"] {
+    color: var(--lumo-contrast-70pct);
+}
+
 :host([theme~='leading-icon']) [part="label"] {
     left: calc(var(--leading-icon-offset) + var(--text-offset));
 }

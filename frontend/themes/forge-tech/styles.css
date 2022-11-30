@@ -14,7 +14,7 @@ html {
     --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
     --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
     --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
-    --mdc-theme-text-disabled-on-background: var(--lumo-contrast-20pct);
+    --mdc-theme-text-disabled-on-background: var(--lumo-contrast-40pct);
     --mdc-theme-text-icon-on-background: var(--mdc-theme-text-hint-on-background);
     --mdc-theme-text-primary-on-light: var(--mdc-theme-text-primary-on-background);
     --mdc-theme-text-secondary-on-light: var(--mdc-theme-text-secondary-on-background);
@@ -117,6 +117,8 @@ html {
     --forge-badge-theme-info-secondary-strong-background: #000000;
     --forge-badge-theme-info-secondary-muted-color: #000000;
     --forge-badge-theme-info-secondary-strong-color: #ffffff;
+    --mdc-theme-notification-background: #303030; /* custom variable for notification */
+    --mdc-theme-text-notification: var(--lumo-tint); /* custom variable for notification text */
 
     --lumo-border-radius-s: 0.25em;
     --lumo-border-radius-m: var(--lumo-border-radius, 0.25em);
@@ -335,6 +337,8 @@ html[theme="dark"] {
     --mdc-switch-disabled-unselected-icon-color: on-primary;
     --mdc-switch-disabled-unselected-icon-opacity: 0.54;
     --mdc-switch-disabled-unselected-track-color: rgba(255, 255, 255, 0.38);
+    --mdc-theme-notification-background: #f8f8f8; /* custom variable for notification */
+    --mdc-theme-text-notification: var(--mdc-theme-text-primary-on-dark); /* custom variable for notification text */
 
     --lumo-error-text-color: rgb(207, 102, 121);
     --lumo-error-color-50pct: rgba(207, 102, 121, 0.5);
@@ -380,4 +384,16 @@ html[theme="dark"] {
 
 hr {
     margin: var(--lumo-space-s) 0px;
+}
+
+vaadin-context-menu-overlay vaadin-context-menu-item {
+    font-size: var(--lumo-font-size-m);
+}
+
+vaadin-select:not([has-label]) vaadin-select-value-button {
+    --inset-padding: 0;
+}
+
+[theme="dark"] vaadin-grid-pro {
+    --forge-theme-tertiary: var(--lumo-primary-color);
 }

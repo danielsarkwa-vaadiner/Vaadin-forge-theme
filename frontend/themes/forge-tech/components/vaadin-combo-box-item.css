@@ -1,0 +1,28 @@
+:host {
+    border-radius: 0;
+    padding: 1em;
+}
+
+[part="checkmark"] {
+    display: none;
+}
+
+:host(:hover:not([disabled])) {
+    background-color: var(--lumo-shade-5pct);
+}
+
+:host([focused]:not([disabled])) {
+    box-shadow: none;
+}
+
+:host([focused]:not([disabled])) [part="content"] {
+    color: var(--lumo-primary-color);
+}
+
+:host([selected]) {
+    background-color: #EDF0F8;
+}
+
+:host([selected]:hover) {
+    background-color: #E3E7F4;
+}

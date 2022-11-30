@@ -20,6 +20,17 @@
 
 :host(:hover) {
     background-color: var(--mdc-theme-primary-4pct);
+}
+
+:host(:hover), :host([focus-ring]) {
+    color: var(--mdc-theme-text-secondary-on-light);
+}
+
+:host([selected]:hover), :host([focus-ring]) {
+    color: var(--lumo-primary-color);
+}
+
+:host([active]:not([selected])) {
     color: var(--mdc-theme-text-secondary-on-light);
 }
 
