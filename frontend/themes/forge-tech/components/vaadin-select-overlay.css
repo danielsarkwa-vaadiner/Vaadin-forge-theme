@@ -1,0 +1,14 @@
+:host {
+    --select-primary-5pct: var(--lumo-primary-color-5pct);
+    --select-primary-10pct: var(--lumo-primary-color-10pct);
+    --select-hide-checkmark: none;
+    --select-no-checkmark-padding: var(--lumo-space-m);
+}
+
+[part="overlay"] {
+    box-shadow: var(--forge-theme-popup-elevation);
+}
+
+[part="content"] {
+    padding: 0;
+}

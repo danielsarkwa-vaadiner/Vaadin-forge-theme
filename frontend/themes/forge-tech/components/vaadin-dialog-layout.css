@@ -1,3 +1,7 @@
 [part="footer"] {
     padding: var(--lumo-space-xs) var(--lumo-space-s);
 }
+
+:host(:not([editor-position=''])) [part='editor']:not([hidden]) {
+    box-shadow: var(--forge-theme-popup-elevation);
+}

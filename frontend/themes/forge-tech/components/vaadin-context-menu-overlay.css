@@ -6,3 +6,7 @@
     padding: var(--lumo-space-s) 0px;
     font-size: 0.875rem;
 }
+
+[part="overlay"] {
+    box-shadow: var(--forge-theme-popup-elevation);
+}

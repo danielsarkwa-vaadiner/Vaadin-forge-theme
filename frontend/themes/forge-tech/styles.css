@@ -1,4 +1,5 @@
 @import url('./components/badge.css');
+@import url('./typography.css');
 
 html {
     --mdc-theme-primary: #3f51b5;
@@ -119,6 +120,8 @@ html {
     --forge-badge-theme-info-secondary-strong-color: #ffffff;
     --mdc-theme-notification-background: #303030; /* custom variable for notification */
     --mdc-theme-text-notification: var(--lumo-tint); /* custom variable for notification text */
+    --mdc-theme-split-handle-color: #676767; /* custom variable for split handle */
+    --forge-theme-border-hover-color: #D6D7D7; /* custom extended variable */
 
     --lumo-border-radius-s: 0.25em;
     --lumo-border-radius-m: var(--lumo-border-radius, 0.25em);
@@ -193,6 +196,7 @@ html {
     --lumo-primary-color: var(--mdc-theme-primary);
     --lumo-primary-color-50pct: rgba(63, 81, 181, 0.5);
     --lumo-primary-color-10pct: rgba(63, 81, 181, 0.1);
+    --lumo-primary-color-5pct: #EDF0F8;
     --lumo-primary-text-color: var(--lumo-primary-color);
     --lumo-primary-contrast-color: #FFF;
     --lumo-error-color: var(--mdc-theme-error);
@@ -339,6 +343,8 @@ html[theme="dark"] {
     --mdc-switch-disabled-unselected-track-color: rgba(255, 255, 255, 0.38);
     --mdc-theme-notification-background: #f8f8f8; /* custom variable for notification */
     --mdc-theme-text-notification: var(--mdc-theme-text-primary-on-dark); /* custom variable for notification text */
+    --mdc-theme-split-handle-color: #AAAAAA; /* custom variable for  */
+    --forge-theme-border-hover-color: #4E4D4D; /* custom extended variable */
 
     --lumo-error-text-color: rgb(207, 102, 121);
     --lumo-error-color-50pct: rgba(207, 102, 121, 0.5);
@@ -347,6 +353,7 @@ html[theme="dark"] {
     --lumo-primary-text-color: var(--mdc-theme-primary);
     --lumo-primary-color-50pct: rgba(140, 158, 255, 0.5);
     --lumo-primary-color-10pct: rgba(140, 158, 255, 0.1);
+    --lumo-primary-color-5pct: #3D3E45;
     --lumo-primary-color: #8c9eff;
     --lumo-success-text-color: rgb(23, 90, 42);
     --lumo-success-color-50pct: rgba(23, 90, 42, 0.5);

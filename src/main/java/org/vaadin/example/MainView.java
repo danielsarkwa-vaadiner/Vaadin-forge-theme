@@ -32,7 +32,6 @@ public class MainView extends AppLayout {
         setPrimarySection(Section.DRAWER);
     }
 
-
     private Tabs getTabs() {
         Tabs tabs = new Tabs();
         tabs.add(
@@ -57,12 +56,14 @@ public class MainView extends AppLayout {
             createTab("Number Field", NumberFieldView.class),
             createTab("Password Field", PasswordFieldView.class),
             createTab("Select", SelectView.class),
+            createTab("Split Layout", SplitLayoutView.class),
             createTab("Tabs", TabsView.class),
             createTab("Text Field", TextFieldView.class),
             createTab("Text Area", TextAreaView.class),
             createTab("Time Picker", TimePickerView.class),
             createTab("Tree Grid", TreeGridView.class),
             createTab("Upload", UploadView.class),
+            createTab("Typography", TypographyView.class),
             createTab("Checkout Demo", CheckoutView.class),
             createTab("Components", ComponentsView.class)
         );

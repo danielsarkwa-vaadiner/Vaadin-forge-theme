@@ -1,5 +1,6 @@
 [part="overlay"] {
     border-radius: var(--lumo-border-radius);
+    box-shadow: var(--forge-theme-popup-elevation);
 }
 
 [part="content"] {
@@ -7,5 +8,6 @@
 }
 
 :host([theme~="_vaadin-confirm-dialog-dialog-overlay-theme"]) [part="content"] {
-    padding: var(--lumo-space-l);
+    --lumo-contrast-5pct: transparent;
+    padding: 1rem 1rem var(--lumo-space-l);
 }

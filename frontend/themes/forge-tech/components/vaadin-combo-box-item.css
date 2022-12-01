@@ -20,9 +20,9 @@
 }
 
 :host([selected]) {
-    background-color: #EDF0F8;
+    background-color: var(--lumo-primary-color-5pct);
 }
 
 :host([selected]:hover) {
-    background-color: #E3E7F4;
+    background-color: var(--lumo-primary-color-10pct);
 }

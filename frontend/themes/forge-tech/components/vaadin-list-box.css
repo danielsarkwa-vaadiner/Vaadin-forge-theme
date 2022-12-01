@@ -3,6 +3,8 @@
     font-weight: 400;
     border-radius: 0;
     padding: var(--lumo-space-m) var(--lumo-space-xl) var(--lumo-space-m) var(--lumo-border-radius);
+
+    padding-left: var(--select-no-checkmark-padding);
 }
 
 :host ::slotted(vaadin-item:hover:not([disabled])) {

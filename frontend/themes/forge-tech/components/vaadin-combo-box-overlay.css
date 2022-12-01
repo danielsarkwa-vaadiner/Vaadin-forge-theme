@@ -7,3 +7,7 @@
 :host([top-aligned]) [part~="overlay"] {
     margin-top: 0;
 }
+
+[part="overlay"] {
+    box-shadow: var(--forge-theme-popup-elevation);
+}
