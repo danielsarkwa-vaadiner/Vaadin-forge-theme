@@ -1,8 +1,8 @@
 :host {
-    --select-primary-5pct: var(--lumo-primary-color-5pct);
-    --select-primary-10pct: var(--lumo-primary-color-10pct);
-    --select-hide-checkmark: none;
-    --select-no-checkmark-padding: var(--lumo-space-m);
+    --_select-component-item-selected-icon-display: none;
+    --_select-component-item-selected-background: var(--lumo-primary-color-5pct);
+    --_select-component-item-selected-hover-background: var(--lumo-primary-color-10pct);
+    --_select-component-item-left-padding: var(--lumo-space-m);
 }
 
 [part="overlay"] {

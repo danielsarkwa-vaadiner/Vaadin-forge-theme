@@ -3,12 +3,11 @@
     font-weight: 400;
     border-radius: 0;
     padding: var(--lumo-space-m) var(--lumo-space-xl) var(--lumo-space-m) var(--lumo-border-radius);
-
-    padding-left: var(--select-no-checkmark-padding);
+    padding-left: var(--_select-component-item-left-padding);
 }
 
 :host ::slotted(vaadin-item:hover:not([disabled])) {
-    background-color: var(--lumo-shade-5pct);
+    background-color: var(--lumo-shade-5pct, var(--_select-component-item-selected-hover-background));
 }
 
 :host([theme~="minimal"]) ::slotted(vaadin-item) {
