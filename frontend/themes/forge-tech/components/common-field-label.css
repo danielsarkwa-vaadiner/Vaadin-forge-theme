@@ -52,6 +52,10 @@
     color: var(--lumo-error-color);
 }
 
+[part='required-indicator']::after {
+    display: none;
+}
+
 /* Placeholder styles */
 ::slotted(:is(input, textarea):placeholder-shown) {
     color: var(--mdc-theme-text-hint-on-background);

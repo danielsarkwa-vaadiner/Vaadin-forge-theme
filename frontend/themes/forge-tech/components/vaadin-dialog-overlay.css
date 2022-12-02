@@ -9,5 +9,5 @@
 
 :host([theme~="_vaadin-confirm-dialog-dialog-overlay-theme"]) [part="content"] {
     --lumo-contrast-5pct: transparent;
-    padding: 1rem 1rem var(--lumo-space-l);
+    padding: 1rem var(--lumo-space-l) var(--lumo-space-l);
 }
